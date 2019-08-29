@@ -65,5 +65,3 @@ def calcul(exp):
         else:
             stack.append(float(element))
     return stack[0]
-
-
