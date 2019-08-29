@@ -1,3 +1,0 @@
-import pycalc
-
-pycalc.main()

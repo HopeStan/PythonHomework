@@ -33,7 +33,7 @@ def infix_to_postfix(parsed_exp):
     return postfix_list
 
 
-def calculate(exp):
+def calcul(exp):
     stack = []
     parsed_exp = parse_to_list(exp)
     polish = infix_to_postfix(parsed_exp)
