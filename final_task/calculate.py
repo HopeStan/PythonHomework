@@ -1,5 +1,5 @@
-from final_task.pycalc.operate import OPERATIONS, DICT_Math, DICT_Const, DICT_All
-from final_task.pycalc.split import is_number, parse_to_list
+from final_task.operate import OPERATIONS, DICT_Math, DICT_Const, DICT_All
+from final_task.split import is_number, parse_to_list
 
 
 def infix_to_postfix(parsed_exp):
@@ -60,7 +60,8 @@ def calcul(exp):
                     variable_2, variable_1 = stack.pop(), stack.pop()
                     stack.append(DICT_All[element].func(variable_1, variable_2))
                 except Exception as e:
-                    raise ValueError(f'ERROR: binary operation is a calculation that combines two elements {e}')
+                    raise ValueError(f'ERROR: binary operation is a calculation '
+                                     f'that combines two elements {e}')
         else:
             stack.append(float(element))
     return stack[0]
