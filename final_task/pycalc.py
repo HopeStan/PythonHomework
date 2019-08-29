@@ -1,14 +1,13 @@
 import argparse
-from .calculate import calculate
+from final_task.calculate import calculate
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Pure-python command-line calculator.",
-                                     prog="pycalc")
+    parser = argparse.ArgumentParser(description="Pure-python command-line calculator.")
     parser.add_argument("EXPRESSION", help="Please, enter an expression for calculating", type=str)
     args = parser.parse_args()
     result = calculate(args.EXPRESSION)
-    return result
+    print(result)
 
 
 if __name__ == '__main__':
