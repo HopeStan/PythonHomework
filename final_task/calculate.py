@@ -66,5 +66,3 @@ def calculate(exp):
     return stack[0]
 
 
-print(calculate("pow(2, 6)"))
-
