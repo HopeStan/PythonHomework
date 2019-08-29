@@ -1,5 +1,5 @@
-from final_task.operator import OPERATIONS, DICT_Math, DICT_Const, DICT_All
-from final_task.split import is_number, parse_to_list
+from operator import OPERATIONS, DICT_Math, DICT_Const, DICT_All
+from split import is_number, parse_to_list
 
 
 def infix_to_postfix(parsed_exp):
