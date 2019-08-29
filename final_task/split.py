@@ -1,5 +1,5 @@
 import re
-from final_task.operator import LIST_OF_OP, DICT_Math, DICT_Const
+from .operate import LIST_OF_OP, DICT_Math, DICT_Const
 
 
 def is_number(s):

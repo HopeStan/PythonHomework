@@ -1,5 +1,5 @@
 import argparse
-import calculate
+from .calculate import calculate
 
 
 def main():
