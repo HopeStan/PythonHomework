@@ -1,5 +1,5 @@
 import argparse
-from final_task.calculate import calculate
+from final_task.pycalc.calculate import calculate
 
 
 def main():
