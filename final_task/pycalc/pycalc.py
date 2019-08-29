@@ -139,7 +139,7 @@ def parse_to_list(inp):
     """String splitting by operators and operands using regular expressions"""
     pre_validate(inp)
     prefixes = LIST_OF_OP
-    str_list = re.findall(r'(?:\d+\.\d+)|(?:\d+\.?)|[a-zA-Z\d]+|\W+', inp)
+    str_list = re.findall(r'(?:\d+\.\d+)|(?:\d+\.?)|[a-zA-Z\d]+|\W', inp)
     new_str = []
     for item in str_list:
         if item in LIST_OF_OP:
